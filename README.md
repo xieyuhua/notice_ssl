@@ -19,6 +19,12 @@ hosts:
 
 
 
+
+wget -c https://github.com/go-acme/lego/releases/download/v4.14.2/lego_v4.14.2_linux_amd64.tar.gz
+tar -zxvf lego_v4.14.2_linux_amd64.tar.gz
+rm lego_v4.14.2_linux_amd64.tar.gz
+chmod +x lego
+
 #!/bin/bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
