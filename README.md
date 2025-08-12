@@ -17,5 +17,22 @@ hosts:
   - web.example.com
   - api.example.com:4433
 
+
+
+#!/bin/bash
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+export PATH
+cd  /www/server/panel/vhost/cert/ssl/ &&
+ALICLOUD_ACCESS_KEY=LTAIkD3A3iPMyxH \
+ALICLOUD_SECRET_KEY=LM7UjnEQEmz \
+./lego --email="1510120461@qq.com" \
+--dns="alidns" \
+--domains="*.zadsadfef.com" \
+renew --days=30 \
+--renew-hook="sudo  /etc/init.d/nginx restart"
+echo "----------------------------------------------------------------------------"
+endDate=`date +"%Y-%m-%d %H:%M:%S"`
+echo "★[$endDate] Successful"
+echo "----------------------------------------------------------------------------"
 ```
 
