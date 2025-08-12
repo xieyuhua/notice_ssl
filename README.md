@@ -40,5 +40,10 @@ echo "--------------------------------------------------------------------------
 endDate=`date +"%Y-%m-%d %H:%M:%S"`
 echo "★[$endDate] Successful"
 echo "----------------------------------------------------------------------------"
+
+
+ALICLOUD_ACCESS_KEY=57575757  ALICLOUD_SECRET_KEY=47575
+./lego --email="1510120461@qq.com" --dns="alidns" --domains="*.az4757bk.com" --path=/www/wwwroot/www.578575.com/ssl  run
+
 ```
 
